@@ -27,3 +27,50 @@
   background-color: rgb(67, 208, 51);
   }
 }
+@media screen and (min-width: 500px) {
+  .example-1 {
+    width: 60px;
+  height: 60px;
+  background-color: rgb(221, 228, 16);
+  }
+}
+.example-2{
+  background-color: white;
+  color: gray;
+  padding: 10px 15px;
+}
+@media screen and (prefers-color-scheme:dark) {
+  .example-2{
+    background-color: gray;
+    color: white;
+  }
+  
+}
+
+@media print {
+  .example-2{
+    color: black;
+    font-size: 22px;
+    text-indent: 40px;
+  }
+}
+.example-2::first-letter{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.example-3 img{
+  float: left;
+  width: 100%;
+  max-width: 400px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .example-3 img {
+    max-width: none;
+
+  }
+}
